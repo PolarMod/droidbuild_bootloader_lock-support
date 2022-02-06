@@ -1,6 +1,6 @@
 include_if_exists "$BASEDIR/incremental_vars.sh"
 
-droidbuild(){
+droidbuild_module(){
   LOCAL_PATH=$(dirname $BASH_SOURCE)
   if ndef BOOTLOADER_LOCK_SUPPORT; then
      info "Patching bootloader locking support"
